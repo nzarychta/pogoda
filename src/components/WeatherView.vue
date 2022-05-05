@@ -53,7 +53,7 @@ export default {
       })
     },
     getLocation(){
-      fetch("http://api.openweathermap.org/geo/1.0/direct?q="+this.cityName+"&appid=04d03c358e8933ac6823da54c340c97b")
+      fetch("https://api.openweathermap.org/geo/1.0/direct?q="+this.cityName+"&appid=04d03c358e8933ac6823da54c340c97b")
       .then(dt => dt.json())
       .then(dt => {
         this.cityName = dt[0].name;
